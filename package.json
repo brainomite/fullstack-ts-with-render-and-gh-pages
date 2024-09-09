@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-ts-with-render-and-gh-pages",
+  "version": "1.0.0",
+  "description": "This will be a demo for setting up a fullstack react app using TS, which will have an express server hosted on render.com and the frontend hosted on Github pages",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e js,mjs,cjs,json,ts --watch backend/src --exec node --env-file .env --no-warnings=ExperimentalWarning --loader ts-node/esm backend/src/index.ts",
+    "build": "npm install && tsc",
+    "start": "node backend/dist/src/index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
