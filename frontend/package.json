@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://brainomite.github.io/fullstack-ts-with-render-and-gh-pages",
   "private": true,
   "version": "0.0.0",
   "type": "module",
