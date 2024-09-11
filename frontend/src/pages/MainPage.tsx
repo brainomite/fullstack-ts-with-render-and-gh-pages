@@ -12,7 +12,6 @@ function MainPage() {
     const fetchResponse = async () => {
       try {
         const res = await fetch(`${backendUrl}/api/helloworld`);
-        console.log(backendUrl);
         setServerResponse(await res.text());
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
