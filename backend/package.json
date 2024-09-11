@@ -4,9 +4,9 @@
   "description": "This will be a demo for setting up a fullstack react app using TS, which will have an express server hosted on render.com and the frontend hosted on Github pages",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -e js,mjs,cjs,json,ts --watch backend/src --exec node --env-file .env --no-warnings=ExperimentalWarning --loader ts-node/esm backend/src/index.ts",
+    "dev": "nodemon -e js,mjs,cjs,json,ts --watch ./ --exec node --env-file .env --no-warnings=ExperimentalWarning --loader ts-node/esm src/index.ts",
     "build": "npm install && tsc",
-    "start": "node backend/dist/src/index.js"
+    "start": "node dist/src/index.js"
   },
   "type": "module",
   "keywords": [],
