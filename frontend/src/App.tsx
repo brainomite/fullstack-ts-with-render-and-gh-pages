@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchResponse = async () => {
       try {
-        await fetch(`${backendUrl}/api`);
+        await fetch(`${backendUrl}/api/wakeup`);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         console.error(`Failed to connect to ${backendUrl}\n${error.message}`);
